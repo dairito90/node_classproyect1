@@ -18,6 +18,7 @@ app.post('/containers', function(req, res){
   id++;
   req.body.id = id + '';
   containers.push(container);
+  console.log(container);
   res.json(container);
 });
 
@@ -47,12 +48,12 @@ res.json(updateContainer);
 });
 
 app.delete('/containers/:id', function(req, res){
-  var containers = _.findIndex(container, {id: req.params.id});
-  if(!containers[container]){
+  var containers = _.findIndex(containers, {id: req.params.id});
+  if(!containers[containers]){
     res.send()
   }else{
     var deletedContainer = container[container];
-    lions.splice(container, 1);
+    containers.splice(container, 1);
     res.json(deletedContainer);
   }
 });
