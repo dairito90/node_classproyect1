@@ -1,0 +1,25 @@
+{
+  "name": "node_classproyect1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dairito90/node_classproyect1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dairito90/node_classproyect1/issues"
+  },
+  "homepage": "https://github.com/dairito90/node_classproyect1#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "lodash": "^4.17.4",
+    "morgan": "^1.8.1"
+  }
+}
