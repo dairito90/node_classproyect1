@@ -11,23 +11,26 @@
 
 <body>
     <main>
+        <!-- <img src="containerClient/images/container.png" > -->
         <h1>Containers Report</h1>
         <form name="containers">
             <div class="textbox">
                 <input type="text" name="company-name" required/>
                 <span class="highlight"></span>
-                <label>Company Name</label>
+                <h3 id="title">Company Name</h3>
             </div>
 
 
+            <div class="textbox">
+                <h3  id="title">Container Number</h3>
+                <input type="number" name="container-number" required/>
+            </div>
 
-                <label>Container Number</label>
-            <input type="number" name="container-number" required/>
-            <!-- <select   name="select">
-                <option value="empty">empty</option>
-                <option value="full">full</option>
+            <select name="select">
+                <option value="empty">Empty</option>
+                <option value="full">Full</option>
 
-            </select> -->
+            </select>
             <button>Submit</button>
         </form>
         <div class="content">

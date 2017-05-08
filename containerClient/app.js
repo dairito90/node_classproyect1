@@ -22,13 +22,13 @@ var updatedContainerList = function(){
 var getValues = function() {
     var companyName = document.querySelector('input[name=company-name]').value;
     var containerNumber = document.querySelector('input[type=number]').value;
-    var status = document.querySelector('input[name=container-status]').value;
+    var status = document.querySelector('select');
     status = status.options[status.selectedIndex].value;
 
 
     document.querySelector('input[name=company-name]').value = '';
     document.querySelector('input[type=number]').value = '';
-    document.querySelector('input[name=container-status]').value = '';
+    //document.querySelector('input[name=container-status]').value = '';
 
 
     return {
@@ -66,7 +66,7 @@ var getValues = function() {
             })
             .then(function(createdContainer) {
                 containers.push(createdContainer);
-                console.log(containers);
+                // console.log(containers);
                 updatedContainerList();
             })
         return false;
